@@ -135,6 +135,8 @@ stocks = (
 )
 
 # 총 재고 금액 출력
-tot = (int(price) * int(num) for price, num in zip(stocks[1], stocks[2]))
-print(sum(tot))
+tot = sum(price * qty for _, price, qty in stocks)
+tot = sum([price * qty for _, price, qty in stocks])
+
+print(f"총액: {tot:,}원")
 # ✅ 총액: 21,000원
