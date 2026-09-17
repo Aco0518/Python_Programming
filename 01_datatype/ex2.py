@@ -36,7 +36,7 @@ import sys
 
 print(sys.float_info.min)
 print(sys.float_info.max)
-print(-sys.float_info.max)
+print(-sys.float_info.mix)
 print(-sys.float_info.max)
 
 a = 1.7e308
